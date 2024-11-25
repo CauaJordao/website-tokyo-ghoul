@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+#tema-toggle {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #fc0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tema-toggle:hover {
+    background-color: #ff0000;
+}
+
+.banner {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.banner-text {
+    color: rgb(255, 255, 255);
+    text-align: center; 
+    z-index: 1; 
+    padding: 20px;
+    max-width: 80%; 
+}
+
+.banner-text h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+}
+
+.personagens {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.personagens h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.personagem {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.personagem img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.personagem h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.personagem p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.personagem:hover {
+    transform: scale(1.05);
+}
+
+.personagem:hover img {
+    opacity: 0.8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-modal {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+.episodios {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.episodios h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.episodios-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.episodio {
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.episodio img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.episodio h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.episodio p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.episodio button {
+    margin-top: 10px;
+}
+
+.contato {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contato h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .episodios-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #111;
+}
+
+header nav a.dark-mode {
+    color: #fff;
+}
+
+header nav a.dark-mode:hover {
+    color: #f39c12;
+}
+
+button.dark-mode {
+    background-color: #ff0000;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #ff0000;
+}
+
+.personagem.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+.personagem.dark-mode:hover {
+    transform: scale(1.05);
+}
+
+.episodio.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+.modal-content.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+button.dark-mode {
+    background-color: #ff0000;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #ff0000;
+}

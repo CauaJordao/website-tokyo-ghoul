@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Ghoul</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tokyo Ghoul</h1>
+        <nav>
+            <a href="#personagens">Personagens</a>
+            <a href="#episodios">Temporadas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="images/BANNER2.jpg" alt="Tokyo Ghoul Banner" class="banner-img">
+        <div class="banner-text">
+            <h1>UMA JORNADA SOMBRIA NO INCRÍVEL MUNDO DOS GHOULS</h1>
+            <h2>TOKYO GHOUL É UM ANIME INTENSO QUE ACOMPANHA KEN KANEKI, UM JOVEM UNIVERSITÁRIO QUE SE TRANSFORMA EM MEIO-GHOUL APÓS UM TRÁGICO ACIDENTE. ELE DEVE LUTAR PARA EQUILIBRAR SUA VIDA COMO HUMANO E A TERRÍVEL REALIDADE DOS GHOULS.</h2>
+        </div>
+    </section>
+
+    <main>
+        <section id="personagens" class="personagens">
+            <h2>Galeria de Personagens</h2>
+            <div class="galeria">
+                <div class="personagem" onclick="abrirModal('kaneki')">
+                    <img src="images/kaneki.png" alt="Ken Kaneki">
+                    <h3>Ken Kaneki</h3>
+                    <p>Um estudante universitário que se transforma em meio-ghoul após um acidente.</p>
+                </div>
+                <div class="personagem" onclick="abrirModal('touka')">
+                    <img src="images/touka.png" alt="Touka Kirishima">
+                    <h3>Touka Kirishima</h3>
+                    <p>Uma ghoul que trabalha no Anteiku, equilibrando sua vida entre ghouls e humanos.</p>
+                </div>
+                <div class="personagem" onclick="abrirModal('jason')">
+                    <img src="images/yamori.png" alt="Yamori (Jason)">
+                    <h3>Yamori (Jason)</h3>
+                    <p>Um ghoul brutal conhecido por suas práticas de tortura contra humanos e ghouls.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal-kaneki" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="fecharModal('kaneki')">&times;</span>
+                <h2>Ken Kaneki</h2>
+                <img src="images/kaneki.png" alt="Ken Kaneki em alta resolução">
+                <p>Ken Kaneki era um estudante comum até sofrer um acidente que o transformou em meio-ghoul. Ele agora luta para equilibrar sua humanidade e os impulsos de um ghoul enquanto descobre verdades sombrias sobre o mundo ao seu redor.</p>
+                <button onclick="fecharModal('kaneki')">Voltar à Galeria</button>
+            </div>
+        </div>
+
+        <div id="modal-touka" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="fecharModal('touka')">&times;</span>
+                <h2>Touka Kirishima</h2>
+                <img src= "images/touka.png" alt="Touka Kirishima em alta resolução">
+                <p>Touka Kirishima é uma ghoul que trabalha no café Anteiku. Apesar de sua natureza sombria, ela tem um lado protetor e faz de tudo para proteger aqueles que ama, mesmo sendo forçada a lutar por sua sobrevivência em um mundo hostil.</p>
+                <button onclick="fecharModal('touka')">Voltar à Galeria</button>
+            </div>
+        </div>
+
+        <div id="modal-jason" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="fecharModal('jason')">&times;</span>
+                <h2>Yamori (Jason)</h2>
+                <img src="images/yamori.png" alt="Yamori (Jason) em alta resolução">
+                <p>Yamori, também conhecido como Jason, é um dos vilões mais temidos do mundo dos ghouls. Ele é responsável por muitas torturas e crueldades contra tanto humanos quanto ghouls, sendo um dos maiores antagonistas da série.</p>
+                <button onclick="fecharModal('jason')">Voltar à Galeria</button>
+            </div>
+        </div>
+
+        <section id="episodios" class="episodios">
+            <h2>Temporadas</h2>
+            <div class="episodios-lista">
+                <div class="episodio">
+                    <img src="images/S1.png" alt="Season 1">
+                    <h3>Temporada 1</h3>
+                    <p>A primeira temporada de Tokyo Ghoul apresenta Ken Kaneki, um estudante universitário que se torna meio-ghoul após um acidente com Rize Kamishiro, uma ghoul. A temporada explora sua luta interna para aceitar sua nova identidade e a crescente ameaça de ghouls que vivem à margem da sociedade. Kaneki é forçado a se adaptar a um novo mundo de violência e mistério, enquanto tenta esconder sua natureza de ghoul dos humanos. A temporada também apresenta o café Anteiku, um refúgio para ghouls pacíficos, e vários personagens-chave como Touka Kirishima e Yoshimura.</p>
+                    <button onclick="abrirTrailer('trailer1')">Assistir Trailer</button>
+                </div>
+                <div class="episodio">
+                    <img src="images/S2.jpg" alt="Season 2">
+                    <h3>Temporada 2</h3>
+                    <p>A segunda temporada, Tokyo Ghoul √A, segue Kaneki após sua transformação e separação do Anteiku. A temporada introduz novas facções e apresenta seu caminho em busca de sua própria identidade. Enquanto Kaneki começa a questionar suas lealdades, ele se envolve com a organização Aogiri Tree, uma facção radical de ghouls. A temporada tem um foco maior na luta entre humanos e ghouls e na busca de Kaneki por respostas sobre sua nova vida. A temporada também é conhecida por desviar de parte do material original do mangá, oferecendo um final alternativo.</p>
+                    <button onclick="abrirTrailer('trailer2')">Assistir Trailer</button>
+                </div>
+                <div class="episodio">
+                    <img src="images/S3.jpg" alt="Season 3">
+                    <h3>Temporada 3</h3>
+                    <p>Tokyo Ghoul:re é a adaptação da continuação da história do mangá de Tokyo Ghoul e é dividida em duas partes. Na primeira parte, vemos um Kaneki transformado, agora assumindo a identidade de Haise Sasaki, um investigador que trabalha para a CCG (Comissão de Controle de Ghouls). Ele lidera uma unidade chamada Quinx Squad, composta por humanos com habilidades de ghoul, tentando lidar com ameaças crescentes enquanto tenta recuperar sua memória. Enquanto isso, o enredo foca na busca pela verdade sobre os ghouls, a CCG e os segredos ocultos. A segunda parte da temporada explora mais a fundo o conflito entre a CCG, os ghouls e os personagens principais, culminando em uma batalha épica pela sobrevivência.</p>
+                    <button onclick="abrirTrailer('trailer3')">Assistir Trailer</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <form id="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="trailer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharTrailer()">&times;</span>
+            <iframe id="trailer-video" width="100%" height="400px" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
